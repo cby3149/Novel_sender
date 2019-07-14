@@ -16,7 +16,8 @@ while True:
     t += 1
     url = 'https://www.booktxt.net/1_1439/'
     headers = {
-        'User_Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
+        'User_Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2)' +
+        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
     r = requests.get(url, headers=headers).content
     bs = BeautifulSoup(r, 'lxml', from_encoding='utf-8')
     for each in bs.find_all(class_="box_con"):
