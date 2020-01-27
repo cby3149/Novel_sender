@@ -67,4 +67,3 @@ while True:
         print("running " +str(t) + " times," + ' Find new chapter')
         c = 0
     time.sleep(86400)
-
